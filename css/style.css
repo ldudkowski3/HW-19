@@ -1,104 +1,307 @@
-/* font-family: 'Archivo Black', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
-body{
-    display: block;
-}
-.navigationBar {
-    display: flex;
-    align-items: start;
-    height: 80px;
-    width: 100%;
-    /* border: 1px solid red; */
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: white;
+nav{
+  display: flex;
+  background-color: white;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 5px 5px #EEEEEE;
 }
 
-.ld-logo {
-    display: inline-block;
-    padding: 8px;
-    text-align: center;
+.navGrid{
+  display:grid;
+  margin: 10px 0px 0px 100px;
+  grid-template-rows: 90px;
+  grid-template-columns: 150px auto;
+  padding: 5px;
 }
 
-nav {
-    width: auto;
-    height: 60px;
-    padding: 10px;
-    justify-content: left;
+.menuIcon{
+  display: none;
+  height: 18px;
 }
 
-.inline-block {
-    display: inline-block;
+.logo{
+  /* border:1px solid  red; */
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  text-align: center;
 }
 
-nav ul li {
-    vertical-align: top;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: left;
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 200;
-    color: #505050;
+.ld-logo{
+  float: left;
+  overflow: auto;
+  height: 80px;
+  cursor: pointer;
+
 }
 
-.title {
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #505050;
-    padding-bottom: 20px;
+.navigationBar{
+  /* border:1px solid  red; */
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  /* display: flex; */
 }
 
-.content {
-    display: block;
-    width: 100%;
+.navList{
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 5px;
 }
 
-.contentLeft {
-    display: inline-block;
-    width: 65%;
-    /* margin-top: 50px; */
-    padding-left: 64px;
-    font-family: 'Roboto', sans-serif;
-    color: #505050;
+.navItem {
+  display: inline-block;
+  align-items: flex-start;
+  vertical-align: top;
+  padding-right: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: medium;
+  font-size: 18px;
+  color: #505050;
+  cursor: pointer;
 }
 
-.paragraphText {
-    line-height: 1.5;
+.navActive{
+  font-weight: bolder;
+}
 
+.contentArea{
+  /* border: 1px solid red; */
+  display: block;
+  margin: 120px 250px 0px 250px;
+  /* height: 1200px; */
+}
+
+.sliderContainer{
+  border: 1px solid red;
+  height: 300px;
+  width: auto;
+}
+
+.uxWork{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.uxCard{
+  display: block;
+  width: 300px;
+  /* border: 1px solid gray; */
+  border-radius: 10px;
+  margin-right: 20px
+}
+/* #firstCard{
+  margin-left: 0px;
+} */
+
+.uxCard img{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#lapLogo{
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #505050;
+  margin: 0px 0px 10px 0px;
+  transform: translateX(-5px);
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #199FFF;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+p{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #505050;
+  padding-left: 0px;
+  line-height: 150%;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.buttonContainer{
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+.skills{
+  display: inline-block;
+  width: 130px;
+  margin-left: 0px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  /* border: 1px solid red; */
 }
 
 .contentRight {
-    display: inline-block;
-    width: 25%;
-    padding: 10px;
+  display: inline-block;
+  width: 25%;
+  padding: 10px;
+}
+
+.paragraphText {
+  line-height: 1.5;
+}
+
+.contentLeft {
+  display: inline-block;
+  width: 65%;
+  /* margin-top: 50px; */
+  padding-left: 64px;
+  font-family: 'Roboto', sans-serif;
+  color: #505050;
 }
 
 .headshot{
-    width: 100%;
-    border-radius: 10px;
-    }
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.jobList{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  list-style-position: outside;
+  color: #505050;
+  padding-left: 15px;
+  line-height: 150%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#lastJob{
+  margin-bottom: 40px;
+}
+
+.noBullets{
+  list-style-type: none;
+  text-indent: -15px;
+}
+
+.skillsList{
+  margin: 0 auto;
+  list-style-type: none;
+  font-family: 'Roboto', sans serif;
+  font-size: 14px;
+  line-height: 150%;
+  color: #505050;
+  padding: 0px;
+}
+
+button{
+  height: 40px;
+  width: 120px;
+  color: white;
+  background-color: #f08f08;
+  display: inline-block;
+  border-radius: 7px;
+  text-align: center;
+  border: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 footer {
-    width: 100%;
-    height: 50px;
-    background-color: #EEEEEE;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 40px;
+  background-color: #EEEEEE;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 footer ul {
-    font-family: 'Archivo Black', sans-serif;
-    color: #555555;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #555555;
+  align-items: center;
+  font-weight: 500;
+  padding-left: 0px;
+  margin: 10px auto 10px auto;
 }
 
-footer ul li {
-    /* padding-top: 10px; */
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 16px;
-    margin: auto;
+footer li {
+  display: inline-block;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 840px){
+  .navGrid{
+    margin-left: 0px;
+    grid-template-columns: 100px auto;
+  }
+  .contentArea{
+    margin-left:100px;
+    margin-right:100px;
+  }
+  .skills{
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .navGrid{
+    margin-left: 0px;
+    margin-top: 1px;
+    height: 50px;
+    grid-template-columns: 70px auto;
+    grid-template-rows: 50px;
+  }
+  .contentArea{
+    margin: 70px 15px 0px 15px;
+  }
+  .skills{
+    margin-right: 20px;
+  }
+  .ld-logo{
+    height: 50px;
+  }
+  nav{
+  height: 60px;
+  }
+  .uxCard {
+    width: 500px;
+    display: block;
+  }
+  h1{
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .navList{
+    display: none;
+  }
+  .menuIcon{
+    display: block;
+  }
+  .uxCards{
+    width: 100%;
+  }
 }
