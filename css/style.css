@@ -50,6 +50,7 @@ nav{
   list-style-type: none;
   padding-left: 0px;
   margin-top: 5px;
+  border-bottom: 5px solid #199FFF;
 }
 
 a {
@@ -66,10 +67,6 @@ a {
   font-size: 18px;
   color: #505050;
   cursor: pointer;
-}
-
-.navActive{
-  font-weight: bolder;
 }
 
 .contentArea{
@@ -117,7 +114,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #505050;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
   transform: translateX(-5px);
 }
 
@@ -140,6 +137,10 @@ p{
   margin-bottom: 40px;
 }
 
+.title{
+  font-weight: 300;
+}
+
 .buttonContainer{
   margin-top: 50px;
   margin-bottom: 70px;
@@ -155,12 +156,6 @@ p{
   /* border: 1px solid red; */
 }
 
-.contentRight {
-  display: inline-block;
-  width: 25%;
-  padding: 10px;
-}
-
 .paragraphText {
   line-height: 1.5;
 }
@@ -168,13 +163,29 @@ p{
 .contentLeft {
   display: inline-block;
   width: 65%;
-  /* margin-top: 50px; */
-  padding-left: 64px;
   font-family: 'Roboto', sans-serif;
   color: #505050;
 }
 
-.headshot{
+.contentRight {
+  display: inline-block;
+  /* height: calc(vh(".contentLeft")); */
+  width: 25%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.LeftTop{
+
+}
+
+.leftBottom{
+  margin-top: 100px;
+}
+
+.workShot{
   width: 100%;
   border-radius: 10px;
 }
@@ -237,23 +248,23 @@ footer {
 }
 
 .flexFooter{
-  margin: 10px auto;
+  margin: auto;
   display: flex;
 }
 
 
-footer ul {
+.footerNav {
   align-items: center;
-  font-weight: 500;
-  padding-left: 0px;
-  /* margin: 10px auto 10px auto; */
+  padding: 0px;
+  display: flex;
+  margin: 0 auto;
 }
+
 .footerItem {
   font-family: 'Roboto', sans-serif;
   color: #555555;
-  /* align-items: center;
+  align-items: center;
   font-weight: 500;
-  padding-left: 0px; */
 }
 
 footer li {
@@ -261,8 +272,7 @@ footer li {
   align-items: center;
   font-size: 14px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 20px 0px 20px;
   cursor: pointer;
 }
 
