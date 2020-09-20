@@ -396,6 +396,15 @@ button{
   background-color: #717171;
 }
 
+a:hover{
+  color: black;
+  font-weight: bold;
+}
+ .uxCard a:hover{
+   opacity: 0.8;
+ }
+
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
