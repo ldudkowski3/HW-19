@@ -400,7 +400,8 @@ a:hover{
   color: black;
   font-weight: bold;
 }
- .uxCard a:hover{
+
+.uxCard a:hover{
    opacity: 0.8;
  }
 
